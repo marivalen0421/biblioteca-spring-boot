@@ -1,0 +1,165 @@
+body{
+    background:#eef8fc;
+    font-family:"Segoe UI",sans-serif;
+}
+
+.welcome-card{
+
+    background:white;
+    border-radius:22px;
+    padding:40px;
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    border-left:8px solid #00b4d8;
+
+    animation:fade .5s ease;
+
+}
+
+.welcome-card h2{
+
+    color:#03045e;
+    font-weight:700;
+
+}
+
+.welcome-card h2 i{
+
+    color:#00b4d8;
+    margin-right:10px;
+
+}
+
+.welcome-card p{
+
+    color:#6c757d;
+    margin-top:15px;
+    max-width:650px;
+
+}
+
+.profile-icon{
+
+    font-size:90px;
+    color:#00b4d8;
+
+}
+
+.menu-card{
+
+    background:white;
+    border-radius:20px;
+    padding:35px 25px;
+    text-align:center;
+
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
+
+    transition:.35s;
+
+    height:100%;
+
+}
+
+.menu-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.menu-card i{
+
+    font-size:55px;
+    color:#00b4d8;
+
+    margin-bottom:20px;
+
+}
+
+.menu-card h4{
+
+    color:#03045e;
+    font-weight:700;
+
+}
+
+.menu-card p{
+
+    color:#6c757d;
+    min-height:60px;
+
+}
+
+.btn-card{
+
+    width:100%;
+
+    background:#00b4d8;
+
+    color:white;
+
+    border-radius:12px;
+
+    padding:10px;
+
+    font-weight:600;
+
+}
+
+.btn-card:hover{
+
+    background:#0077b6;
+    color:white;
+
+}
+
+.logout i{
+
+    color:#dc3545;
+
+}
+
+.btn-danger{
+
+    width:100%;
+    border-radius:12px;
+
+}
+
+@keyframes fade{
+
+    from{
+
+        opacity:0;
+        transform:translateY(20px);
+
+    }
+
+    to{
+
+        opacity:1;
+        transform:translateY(0);
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .welcome-card{
+
+        flex-direction:column;
+        text-align:center;
+
+    }
+
+    .profile-icon{
+
+        margin-top:20px;
+
+    }
+
+}

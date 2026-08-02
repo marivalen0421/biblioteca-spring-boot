@@ -1,0 +1,186 @@
+body{
+    background:#eef8fc;
+    font-family:"Segoe UI",sans-serif;
+}
+
+.container{
+    max-width:1400px;
+}
+
+/* Encabezado */
+
+.page-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:35px;
+}
+
+.page-header h2{
+    color:#03045e;
+    font-weight:700;
+    margin-bottom:8px;
+}
+
+.page-header h2 i{
+    color:#ffb703;
+    margin-right:10px;
+}
+
+.page-header p{
+    color:#6c757d;
+    margin:0;
+}
+
+/* Botón */
+
+.btn-back{
+    background:#0077b6;
+    color:white;
+    border:none;
+    border-radius:12px;
+    padding:12px 22px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.btn-back:hover{
+    background:#03045e;
+    color:white;
+    transform:translateY(-2px);
+}
+
+/* Tarjeta */
+
+.table-card{
+    background:white;
+    border-radius:20px;
+    padding:25px;
+    border-top:5px solid #ffb703;
+    box-shadow:0 12px 25px rgba(0,0,0,.08);
+    animation:fade .5s ease;
+}
+
+/* Tabla */
+
+.table{
+    margin-bottom:0;
+}
+
+.table thead{
+    background:linear-gradient(90deg,#03045e,#0077b6);
+    color:white;
+}
+
+.table thead th{
+    padding:18px;
+    border:none;
+    font-weight:600;
+}
+
+.table tbody td{
+    padding:18px;
+    vertical-align:middle;
+}
+
+.table tbody tr{
+    transition:.25s;
+}
+
+.table tbody tr:hover{
+    background:#f3fcfe;
+}
+
+/* Badge retraso */
+
+.badge-delay{
+    background:#dc3545;
+    color:white;
+    padding:8px 15px;
+    border-radius:30px;
+    font-weight:600;
+    font-size:13px;
+}
+
+/* Estado */
+
+.badge-warning{
+    background:#fff3cd;
+    color:#856404;
+    padding:8px 15px;
+    border-radius:30px;
+    font-weight:600;
+    font-size:13px;
+}
+
+/* Botones */
+
+.btn{
+    transition:.25s;
+}
+
+.btn:hover{
+    transform:translateY(-2px);
+}
+
+.btn-success{
+    background:#00b4d8;
+    border:none;
+}
+
+.btn-success:hover{
+    background:#0077b6;
+}
+
+.btn-info{
+    background:#03045e;
+    border:none;
+    color:white;
+}
+
+.btn-info:hover{
+    background:#0077b6;
+    color:white;
+}
+
+.btn-sm{
+    width:40px;
+    height:40px;
+    border-radius:10px;
+    display:inline-flex;
+    justify-content:center;
+    align-items:center;
+    margin-right:6px;
+}
+
+/* Animación */
+
+@keyframes fade{
+
+    from{
+        opacity:0;
+        transform:translateY(20px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+/* Responsive */
+
+@media(max-width:992px){
+
+    .page-header{
+        flex-direction:column;
+        align-items:flex-start;
+        gap:18px;
+    }
+
+    .table{
+        font-size:14px;
+    }
+
+}

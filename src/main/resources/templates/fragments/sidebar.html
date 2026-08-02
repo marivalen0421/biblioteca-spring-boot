@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<div th:fragment="sidebar" class="sidebar">
+
+    <div class="logo">
+
+        <i class="fa-solid fa-book-open-reader"></i>
+
+        <h3>Biblioteca</h3>
+
+    </div>
+
+    <ul>
+
+        <li>
+            <a th:href="@{/}">
+                <i class="fa-solid fa-house"></i>
+                <span>Dashboard</span>
+            </a>
+        </li>
+
+        <li>
+            <a th:href="@{/libros}">
+                <i class="fa-solid fa-book"></i>
+                <span>Libros</span>
+            </a>
+        </li>
+
+        <li>
+            <a th:href="@{/estudiantes}">
+                <i class="fa-solid fa-user-graduate"></i>
+                <span>Estudiantes</span>
+            </a>
+        </li>
+        <li>
+            <a th:href="@{/usuarios}">
+                <i class="fa-solid fa-users"></i>
+                <span>Usuarios</span>
+            </a>
+        </li>
+
+        <li>
+            <a th:href="@{/prestamos}">
+                <i class="fa-solid fa-handshake"></i>
+                <span>Préstamos</span>
+            </a>
+        </li>
+        <li>
+            <a th:href="@{/prestamos/vencidos}">
+                <i class="fa-solid fa-triangle-exclamation"></i>
+                <span>Vencidos</span>
+            </a>
+        </li>
+
+    </ul>
+
+</div>
+
+</html>

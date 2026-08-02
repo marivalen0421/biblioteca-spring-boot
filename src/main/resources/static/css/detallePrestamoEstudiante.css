@@ -1,0 +1,120 @@
+body{
+
+    background:#eef8fc;
+    font-family:"Segoe UI",sans-serif;
+
+}
+
+.detail-card{
+
+    background:white;
+
+    border-radius:22px;
+
+    padding:45px;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+
+    border-top:6px solid #00b4d8;
+
+    animation:fade .5s;
+
+}
+
+.book-icon{
+
+    width:180px;
+
+    height:180px;
+
+    margin:auto;
+
+    border-radius:50%;
+
+    background:#caf0f8;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+.book-icon i{
+
+    font-size:75px;
+
+    color:#0077b6;
+
+}
+
+.detail-card h2{
+
+    color:#03045e;
+
+    font-weight:700;
+
+    margin-bottom:20px;
+
+}
+
+.info p{
+
+    font-size:17px;
+
+    margin-bottom:18px;
+
+    color:#495057;
+
+}
+
+.info i{
+
+    color:#00b4d8;
+
+    width:28px;
+
+}
+
+.info strong{
+
+    color:#03045e;
+
+}
+
+.badge{
+
+    font-size:14px;
+
+    padding:9px 15px;
+
+}
+
+.btn-secondary{
+
+    border-radius:12px;
+
+    padding:10px 22px;
+
+}
+
+@keyframes fade{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(20px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}

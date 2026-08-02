@@ -1,0 +1,154 @@
+body{
+    background:#eef8fc;
+    font-family:"Segoe UI",sans-serif;
+}
+
+.contact-form{
+    max-width:700px;
+    background:white;
+    margin:60px auto;
+    padding:40px;
+    border-radius:22px;
+    box-shadow:0 15px 35px rgba(0,0,0,.10);
+    border-top:6px solid #00b4d8;
+    animation:fade .5s ease;
+}
+
+.contact-image{
+    text-align:center;
+    margin-top:-85px;
+}
+
+.contact-image img{
+    width:120px;
+    height:120px;
+    background:white;
+    padding:18px;
+    border-radius:50%;
+    box-shadow:0 8px 20px rgba(0,0,0,.15);
+}
+
+.contact-form h3{
+    text-align:center;
+    color:#03045e;
+    font-weight:700;
+    margin:25px 0 35px;
+}
+
+.contact-form h3 i{
+    color:#00b4d8;
+    margin-right:8px;
+}
+
+label{
+    color:#03045e;
+    font-weight:600;
+    margin-bottom:8px;
+}
+
+.form-control{
+    border:2px solid #caf0f8;
+    border-radius:12px;
+    height:48px;
+    transition:.3s;
+}
+
+.form-control:focus{
+    border-color:#00b4d8;
+    box-shadow:0 0 12px rgba(0,180,216,.25);
+}
+
+.form-control::placeholder{
+    color:#adb5bd;
+}
+
+.alert-info{
+    background:#e8f9fd;
+    border:1px solid #90e0ef;
+    color:#023e8a;
+    border-radius:15px;
+    padding:18px;
+}
+
+.alert-info i{
+    color:#00b4d8;
+    font-size:20px;
+}
+
+.alert-info strong{
+    color:#03045e;
+}
+
+.btn-success{
+    flex:1;
+    background:#00b4d8;
+    border:none;
+    border-radius:12px;
+    padding:12px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.btn-success:hover{
+    background:#0077b6;
+    transform:translateY(-2px);
+}
+
+.btn-secondary{
+    flex:1;
+    border:none;
+    border-radius:12px;
+    padding:12px;
+    font-weight:600;
+    background:#6c757d;
+    transition:.3s;
+}
+
+.btn-secondary:hover{
+    background:#495057;
+    transform:translateY(-2px);
+}
+
+.btn i{
+    margin-right:6px;
+}
+
+@keyframes fade{
+
+    from{
+        opacity:0;
+        transform:translateY(20px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+@media(max-width:768px){
+
+    .contact-form{
+        margin:30px 15px;
+        padding:30px 20px;
+    }
+
+    .contact-image{
+        margin-top:-70px;
+    }
+
+    .contact-image img{
+        width:100px;
+        height:100px;
+    }
+
+    .d-flex{
+        flex-direction:column;
+    }
+
+    .btn{
+        width:100%;
+    }
+
+}

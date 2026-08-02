@@ -1,0 +1,116 @@
+body{
+
+    background:#eef8fc;
+    font-family:"Segoe UI",sans-serif;
+
+}
+
+.book-detail{
+
+    background:white;
+
+    border-radius:22px;
+
+    padding:45px;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+
+    border-top:6px solid #00b4d8;
+
+    animation:fade .5s ease;
+
+}
+
+.book-cover{
+
+    width:220px;
+
+    height:220px;
+
+    margin:auto;
+
+    border-radius:50%;
+
+    background:#caf0f8;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+.book-cover i{
+
+    font-size:90px;
+
+    color:#0077b6;
+
+}
+
+.book-detail h2{
+
+    color:#03045e;
+
+    font-weight:700;
+
+    margin-bottom:20px;
+
+}
+
+.info-item{
+
+    margin-bottom:22px;
+
+    font-size:17px;
+
+}
+
+.info-item i{
+
+    color:#00b4d8;
+
+    width:25px;
+
+}
+
+.info-item strong{
+
+    color:#03045e;
+
+}
+
+.badge{
+
+    padding:9px 16px;
+
+    border-radius:20px;
+
+}
+
+.btn-secondary{
+
+    border-radius:12px;
+
+    padding:10px 22px;
+
+}
+
+@keyframes fade{
+
+    from{
+
+        opacity:0;
+        transform:translateY(20px);
+
+    }
+
+    to{
+
+        opacity:1;
+        transform:translateY(0);
+
+    }
+
+}

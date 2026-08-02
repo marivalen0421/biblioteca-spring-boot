@@ -1,0 +1,146 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Segoe UI",sans-serif;
+}
+
+body{
+    background:#eef8fc;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:40px;
+}
+
+.form-card{
+
+    width:850px;
+    background:#fff;
+    border-radius:25px;
+    padding:45px;
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+
+}
+
+.icono{
+
+    width:90px;
+    height:90px;
+    margin:auto;
+    background:linear-gradient(135deg,#00b4d8,#0077b6);
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-bottom:20px;
+
+}
+
+.icono i{
+
+    font-size:40px;
+    color:white;
+
+}
+
+h2{
+
+    text-align:center;
+    color:#03045e;
+    font-weight:700;
+    margin-bottom:5px;
+
+}
+
+.subtitulo{
+
+    text-align:center;
+    color:#777;
+    margin-bottom:35px;
+
+}
+
+label{
+
+    color:#03045e;
+    font-weight:600;
+    margin-bottom:8px;
+
+}
+
+.form-control{
+
+    border-radius:12px;
+    border:2px solid #caf0f8;
+    padding:12px;
+
+}
+
+.form-control:focus{
+
+    border-color:#00b4d8;
+    box-shadow:0 0 10px rgba(0,180,216,.25);
+
+}
+
+.botones{
+
+    margin-top:35px;
+    display:flex;
+    justify-content:center;
+    gap:20px;
+
+}
+
+.btn{
+
+    border:none;
+    border-radius:12px;
+    padding:12px 28px;
+    font-weight:600;
+    transition:.3s;
+
+}
+
+.btn-guardar{
+
+    background:#0077b6;
+    color:white;
+
+}
+
+.btn-guardar:hover{
+
+    background:#03045e;
+    color:white;
+    transform:translateY(-3px);
+
+}
+
+.btn-cancelar{
+
+    background:#caf0f8;
+    color:#03045e;
+
+}
+
+.btn-cancelar:hover{
+
+    background:#90e0ef;
+    color:#03045e;
+    transform:translateY(-3px);
+
+}
+
+@media(max-width:900px){
+
+    .form-card{
+
+        width:100%;
+        padding:30px;
+
+    }
+
+}

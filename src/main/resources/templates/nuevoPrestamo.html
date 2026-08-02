@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Nuevo Préstamo</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <link rel="stylesheet" th:href="@{/css/dashboard.css}">
+    <link rel="stylesheet" th:href="@{/css/nuevoPrestamo.css}">
+
+</head>
+
+<body>
+
+<div class="wrapper">
+
+    <!-- Sidebar -->
+    <div th:replace="fragments/sidebar :: sidebar"></div>
+
+    <!-- Contenido -->
+    <main class="main-content">
+
+        <!-- Navbar -->
+        <div th:replace="fragments/navbar :: navbar"></div>
+
+        <div class="container-fluid py-4">
+
+            <div class="contact-form">
+
+                <div class="contact-image">
+
+                    <img src="https://cdn-icons-png.flaticon.com/512/3063/3063822.png"
+                         alt="Prestamo">
+
+                </div>
+
+                <form th:action="@{/prestamos}"
+                      th:object="${prestamo}"
+                      method="post">
+
+                    <h3>
+
+                        <i class="fa-solid fa-handshake"></i>
+
+                        Registrar Préstamo
+
+                    </h3>
+
+                    <div th:if="${error}" class="alert alert-danger">
+
+                        <span th:text="${error}"></span>
+
+                    </div>
+
+                    <div class="mb-4">
+
+                        <label class="form-label">
+
+                            <i class="fa-solid fa-book"></i>
+
+                            Libro
+
+                        </label>
+
+                        <select class="form-select" th:field="*{libro}">
+
+                            <option value="">
+                                Seleccione un libro
+                            </option>
+
+                            <option
+                                    th:each="libro : ${libros}"
+                                    th:value="${libro.id}"
+                                    th:text="${libro.titulo}">
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                    <div class="mb-4">
+
+                        <label class="form-label">
+
+                            <i class="fa-solid fa-user-graduate"></i>
+
+                            Estudiante
+
+                        </label>
+
+                        <select class="form-select" th:field="*{estudiante}">
+
+                            <option value="">
+                                Seleccione un estudiante
+                            </option>
+
+                            <option
+                                    th:each="estudiante : ${estudiantes}"
+                                    th:value="${estudiante.id}"
+                                    th:text="${estudiante.nombre}">
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                    <div class="d-flex gap-3 mt-4">
+
+                        <button type="submit"
+                                class="btn btn-success flex-fill">
+
+                            <i class="fa-solid fa-floppy-disk"></i>
+
+                            Registrar
+
+                        </button>
+
+                        <a th:href="@{/prestamos}"
+                           class="btn btn-secondary flex-fill">
+
+                            <i class="fa-solid fa-arrow-left"></i>
+
+                            Cancelar
+
+                        </a>
+
+                    </div>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </main>
+
+</div>
+
+</body>
+
+</html>

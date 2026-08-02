@@ -1,0 +1,234 @@
+body{
+    background:#eef8fc;
+    font-family:"Segoe UI",sans-serif;
+}
+
+/* Contenido */
+
+.main-content{
+    flex:1;
+    margin-left:260px;
+    padding:30px;
+    min-height:100vh;
+    background:#eef8fc;
+}
+
+/* Encabezado */
+
+.page-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:35px;
+    gap:20px;
+}
+
+.page-header h2{
+    color:#03045e;
+    font-weight:700;
+    margin-bottom:5px;
+}
+
+.page-header h2 i{
+    color:#0077b6;
+    margin-right:10px;
+}
+
+.page-header p{
+    color:#6c757d;
+    margin:0;
+}
+
+/* Grupo de botones */
+
+.page-header .d-flex{
+    gap:12px;
+}
+
+/* Botones */
+
+.btn-add{
+    background:#00b4d8;
+    color:white;
+    border:none;
+    border-radius:12px;
+    padding:12px 22px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.btn-add:hover{
+    background:#0077b6;
+    color:white;
+    transform:translateY(-2px);
+}
+
+.btn-show{
+    background:#caf0f8;
+    color:#03045e;
+    border:none;
+    border-radius:12px;
+    padding:12px 22px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.btn-show:hover{
+    background:#90e0ef;
+    color:#03045e;
+    transform:translateY(-2px);
+}
+
+/* Tarjeta */
+
+.table-card{
+    background:white;
+    border-radius:20px;
+    padding:25px;
+    border-top:5px solid #0077b6;
+    box-shadow:0 12px 25px rgba(0,0,0,.08);
+    overflow:hidden;
+    animation:fade .5s ease;
+}
+
+/* Tabla */
+
+.table{
+    margin-bottom:0;
+}
+
+.table thead{
+    background:linear-gradient(90deg,#03045e,#0077b6);
+    color:white;
+}
+
+.table thead th{
+    border:none;
+    padding:18px;
+    font-weight:600;
+}
+
+.table tbody td{
+    padding:18px;
+    vertical-align:middle;
+}
+
+.table tbody tr{
+    transition:.25s;
+}
+
+.table tbody tr:hover{
+    background:#f4fcfe;
+}
+
+/* Estados */
+
+.estado-prestado{
+    background:#fff3cd;
+    color:#856404;
+    padding:8px 16px;
+    border-radius:30px;
+    font-weight:600;
+}
+
+.estado-devuelto{
+    background:#d1f7df;
+    color:#146c43;
+    padding:8px 16px;
+    border-radius:30px;
+    font-weight:600;
+}
+
+/* Botones acciones */
+
+.btn{
+    transition:.25s;
+}
+
+.btn:hover{
+    transform:translateY(-2px);
+}
+
+.btn-primary{
+    background:#0077b6;
+    border:none;
+}
+
+.btn-primary:hover{
+    background:#03045e;
+}
+
+.btn-delete{
+    background:#dc3545;
+    color:white;
+    border:none;
+}
+
+.btn-delete:hover{
+    background:#bb2d3b;
+    color:white;
+}
+
+.btn-info{
+    background:#00b4d8;
+    border:none;
+    color:white;
+}
+
+.btn-info:hover{
+    background:#0096c7;
+    color:white;
+}
+
+/* Botones pequeños */
+
+.btn-sm{
+    width:40px;
+    height:40px;
+    display:inline-flex;
+    justify-content:center;
+    align-items:center;
+    border-radius:10px;
+    margin-right:6px;
+}
+
+/* Animación */
+
+@keyframes fade{
+
+    from{
+        opacity:0;
+        transform:translateY(20px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+/* Responsive */
+
+@media(max-width:992px){
+
+    .main-content{
+        margin-left:90px;
+        padding:20px;
+    }
+
+    .page-header{
+        flex-direction:column;
+        align-items:flex-start;
+    }
+
+    .page-header .d-flex{
+        width:100%;
+        flex-wrap:wrap;
+    }
+
+    .table{
+        font-size:14px;
+    }
+
+}

@@ -1,0 +1,164 @@
+body{
+    background:#eef8fc;
+}
+
+.page-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:30px;
+}
+
+.page-header h2{
+    color:#03045e;
+    font-weight:700;
+}
+
+.page-header p{
+    color:#6c757d;
+    margin:0;
+}
+
+.search-card{
+    background:white;
+    padding:25px;
+    border-radius:18px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    margin-bottom:30px;
+}
+
+.search-input{
+    border-radius:12px;
+    border:2px solid #caf0f8;
+    height:50px;
+}
+
+.search-input:focus{
+    border-color:#00b4d8;
+    box-shadow:0 0 10px rgba(0,180,216,.25);
+}
+
+.btn-add{
+    background:#00b4d8;
+    color:white;
+    border-radius:12px;
+    padding:12px 20px;
+    font-weight:600;
+}
+
+.btn-add:hover{
+    background:#0077b6;
+    color:white;
+}
+
+.btn-search{
+    background:#0077b6;
+    color:white;
+    border-radius:12px;
+}
+
+.btn-search:hover{
+    background:#03045e;
+    color:white;
+}
+
+.btn-show{
+    background:#caf0f8;
+    color:#03045e;
+    border-radius:12px;
+}
+
+.btn-show:hover{
+    background:#90e0ef;
+}
+
+.table-card{
+    background:white;
+    border-radius:18px;
+    padding:25px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.table{
+    margin-bottom:0;
+}
+
+.table thead{
+    background:#0077b6;
+    color:white;
+}
+
+.table thead th{
+    padding:18px;
+    border:none;
+}
+
+.table tbody td{
+    padding:18px;
+    vertical-align:middle;
+}
+
+.table tbody tr:hover{
+    background:#f2fbfd;
+}
+
+.documento{
+    color:#0077b6;
+    font-weight:600;
+}
+
+.programa{
+    background:#caf0f8;
+    color:#03045e;
+    font-size:13px;
+}
+
+.semestre{
+    background:#00b4d8;
+    color:white;
+    font-size:14px;
+}
+
+.btn-edit{
+    background:#ffc107;
+    color:#222;
+    border:none;
+    margin-right:6px;
+}
+
+.btn-edit:hover{
+    background:#e0a800;
+}
+
+.btn-delete{
+    background:#dc3545;
+    color:white;
+    border:none;
+}
+
+.btn-delete:hover{
+    background:#bb2d3b;
+}
+
+.table tbody tr{
+    transition:.25s;
+}
+
+.table-card,
+.search-card{
+    animation:fade .5s ease;
+}
+
+@keyframes fade{
+
+    from{
+        opacity:0;
+        transform:translateY(20px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}

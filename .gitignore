@@ -38,6 +38,5 @@ build/
 logs/
 *.log
 
-application.properties
 
 .DS_Store
